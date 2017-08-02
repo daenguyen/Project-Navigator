@@ -1,0 +1,188 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+
+/* Global CSS */
+
+html {
+  background-color: #EBEBEB;
+  font-family: Arial;
+}
+
+h3 {
+  display: inherit;
+  text-decoration: underline;
+  margin: 0px;
+  margin-bottom: 5px;
+  width: 350px;
+}
+
+a:link {
+  color: green;
+}
+
+a:visited {
+  color: green;
+}
+
+a:hover {
+  color: orange;
+}
+
+/* US Map */
+
+#map {
+  width: 950px;
+  height: 612px;
+  display: inline-block;
+  background-color: #FAFAFA;
+  margin-right: 10px;
+}
+
+
+/* Top Div */
+
+#clicked-state {
+  width: 1865px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #0E5061;
+  color: white;
+  padding: 10px;
+  font-weight: Bold;
+}
+
+
+/* Right Div */
+
+#right-panel {
+  display: inline-block;
+  position: absolute;
+  width: 901px;
+  height: 592px;
+  color: black;
+  background-color: #FAFAFA;
+  padding: 10px;
+}
+
+#state-info {
+  line-height: 1.50;
+}
+
+
+/* Bottom Div */
+
+#bottom-div {
+  width: 1861px;
+  height: 380px;
+  margin-top: 10px;
+  background-color: #FAFAFA;
+  color: black;
+  padding: 10px;
+}
+
+#bottom-head {
+  width: 1100px;
+  position: absolute;
+}
+
+#bottom-content {
+  display: inline-block;
+  line-height: 1.50;
+  position: relative;
+  top: 35px;
+  
+}
+
+#right-box {
+  width: 353px;
+  height: 360px;
+  display: inline-block;
+  line-height: 1.50;
+  float: right;
+  padding: 10px;
+  line-height: 1.50;
+}
+
+#left-box {
+  width: 353px;
+  height: 360px;
+  display: inline-block;
+  line-height: 1.50;
+  float: right;
+  padding: 10px;
+  line-height: 1.50;
+  margin-right: 5px;
+}
+
+#sitHead {
+	width:450px;
+  font-size: 16pt;
+  padding-bottom: 5px;
+  text-decoration: underline;
+}
+
+#suiHead {
+  width:450px;
+  font-size: 16pt;
+  padding-bottom: 5px;
+  text-decoration: underline;
+}
+
+#sitInfo {
+  width:435px;
+  font-size: 14pt;
+  line-height: 2;
+  vertical-align: text-top;
+  padding: 5px;
+}
+
+#suiInfo {
+  width:435px;
+  font-size: 14pt;
+  line-height: 2;
+  vertical-align: text-top;
+  padding: 5px;
+}
+
+#appl {
+  font-size: 12pt;
+  line-height: 2;
+  padding-top: 5px;
+}
+
+#bottomHead {
+  width:460px;
+  font-size: 16pt;
+  padding-bottom: 5px;
+  text-align: left;
+  text-decoration: underline;
+}
+
+#bottom1 {
+  font-size: 14pt;
+  line-height: 2;
+  vertical-align: text-top;
+}
+
+#bottom2 {
+  font-size: 14pt;
+  line-height: 2;
+  vertical-align: text-top;
+}
+
+#bottom3 {
+  font-size: 14pt;
+  line-height: 2;
+  vertical-align: text-top;
+}
+
+#bottom4 {
+  font-size: 14pt;
+  line-height: 2;
+  vertical-align: text-top;
+}
+
+
+	

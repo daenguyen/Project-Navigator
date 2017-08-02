@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+#map {
+	position:static;
+	width:930px;
+	height:630px;
+}
+
+#display-text {
+
+}
+
+#display-state {
+
+}
+
+/*.ui-dialog-osx {
+    -moz-border-radius: 0 0 8px 8px;
+    -webkit-border-radius: 0 0 8px 8px;
+    border-radius: 0 0 8px 8px; border-width: 0 8px 8px 8px;
+} */
+
+
+
+
+

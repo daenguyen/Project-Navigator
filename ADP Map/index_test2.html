@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>ADP Project Navigator</title>
+  <script src="lib/jquery.js"></script>
+  <script src="lib/raphael.js"></script>
+  <script src="lib/jquery.usmap.js"></script>
+  <script src="https://d3js.org/d3.v4.js"></script>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="stateSwitchTEST.js"></script>
+  <script src="staRec.js"></script>
+  <link href="style_test.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!-- top div -->
+  <div id="clicked-state">WELCOME</div>
+
+  <!-- map div -->
+  <div id="map"></div>
+
+  <!-- right panel div -->
+  <div id="right-panel">
+    <table>
+      <tr>
+        <th id="sitHead">State Income Tax Info</th>
+        <th id="suiHead">State Unemployment Tax Info</th>
+      </tr>
+      <tr>
+        <td id="sitInfo"></td>
+        <td id="suiInfo"></td>
+      </tr>
+    </table>
+    <div id="appl"></div>
+  </div>
+
+  <!-- bottom -->
+  <div id="bottom-div">
+    <table>
+      <tr>
+        <!-- headers for the 4 columns -->
+        <th id="bottomHead">Wage Facts</th>
+        <th id="bottomHead">Additional Info</th>
+        <th id="bottomHead">Special Tax Situations</th>
+        <th id="bottomHead">ADP Resources</th>
+      </tr>
+      <tr>
+        <!-- content for the bottom portion -->
+        <td id="bottom1"></td>
+        <td id="bottom2"></td>
+        <td id="bottom3">
+          <div id="bottom3_1"></div>
+          <br />
+          <div><b>State Reciprocity:</b> <i>Lived-In State:</i>
+          </div>
+          <div>
+            <!-- state selection box for state reciprocity -->
+            <select id="stateSel" disabled>
+              <!-- located in the bottom3 cell -->
+              <option selected="defaultSelected" disabled>Select a State</option>
+              <option value="AL">Alabama</option>
+              <option value="AK">Alaska</option>
+              <option value="AZ">Arizona</option>
+              <option value="AR">Arkansas</option>
+              <option value="CA">California</option>
+              <option value="CO">Colorado</option>
+              <option value="CT">Connecticut</option>
+              <option value="DE">Delaware</option>
+              <option value="DC">District of Columbia</option>
+              <option value="FL">Florida</option>
+              <option value="GA">Georgia</option>
+              <option value="HI">Hawaii</option>
+              <option value="ID">Idaho</option>
+              <option value="IL">Illinois</option>
+              <option value="IN">Indiana</option>
+              <option value="IA">Iowa</option>
+              <option value="KS">Kansas</option>
+              <option value="KY">Kentucky</option>
+              <option value="LA">Louisiana</option>
+              <option value="ME">Maine</option>
+              <option value="MD">Maryland</option>
+              <option value="MA">Massachusetts</option>
+              <option value="MI">Michigan</option>
+              <option value="MN">Minnesota</option>
+              <option value="MS">Mississippi</option>
+              <option value="MO">Missouri</option>
+              <option value="MT">Montana</option>
+              <option value="NE">Nebraska</option>
+              <option value="NV">Nevada</option>
+              <option value="NH">New Hampshire</option>
+              <option value="NJ">New Jersey</option>
+              <option value="NM">New Mexico</option>
+              <option value="NY">New York</option>
+              <option value="NC">North Carolina</option>
+              <option value="ND">North Dakota</option>
+              <option value="OH">Ohio</option>
+              <option value="OK">Oklahoma</option>
+              <option value="OR">Oregon</option>
+              <option value="PA">Pennsylvania</option>
+              <option value="RI">Rhode Island</option>
+              <option value="SC">South Carolina</option>
+              <option value="SD">South Dakota</option>
+              <option value="TN">Tennessee</option>
+              <option value="TX">Texas</option>
+              <option value="UT">Utah</option>
+              <option value="VT">Vermont</option>
+              <option value="VA">Virginia</option>
+              <option value="WA">Washington</option>
+              <option value="WV">West Virginia</option>
+              <option value="WI">Wisconsin</option>
+              <option value="WY">Wyoming</option>
+            </select>
+			<br /><button type="button" id="genButton" disabled>Generate</button>
+			<div id="recipAgree"></div>
+          </div>
+        </td>
+        <td id="bottom4">
+          <a href="http://lumin.es.ad.adp.com:8080/contactcenter/microsites/microsite.do?null" target="_blank">LUMIN</a>
+          <br />
+          <a href="http://sbslearning.es.ad.adp.com/Reference_Lib/State_At_Glance/State.htm" target="_blank">State At A Glance</a>
+          <br />
+          <a href="http://mysbs.nj.adp.com/" target="_blank">My SBS</a>
+          <br />
+          <a href="https://adpworks.jiveon.com/" target="_blank">ADPworks</a>
+          <br />
+          <a href="https://adpworks.jiveon.com/community/sbs-ask-einstein" target="_blank">SBS Einstein</a>
+          <br />
+
+		<form action="mailto:danny.nguyen@adp.com;robert.border@adp.com?subject=ADP Map Suggestion" method="post" enctype="text/plain"><br>
+		<u><i><b>Send Suggestion:</b></i></u><br>
+		<input type="submit" value="Send">
+		</form>
+		  
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <script>
+  // global variable 
+  var livState;
+
+  //function to bind state selection; allows for reselect
+  $(function () {
+    $("#stateSel").change(function ()
+    {
+      livState = $(this).val();
+	  $('#genButton').css('color','red');
+      console.log(livState);
+    });
+  });
+
+  $(document).ready(function ()
+  {
+
+    $('#map').usmap(
+    {
+
+      // display all states abbreviations
+      'useAllLabels': true,
+
+      // map color + on hover color functions
+      'stateStyles':
+      {
+        fill: '#156E57',
+        "stroke-width": 1,
+        'stroke': '#e5eaef'
+      },
+	  
+      'stateHoverStyles':
+      {
+        fill: '#8100A1'
+		// '#0E5061' - dark teal
+      },
+
+	  /* // selected state in unique color
+      'stateSpecificStyles':
+      {
+        'AZ':
+        {
+          fill: '#8100A1'
+        },
+      }, 
+	  */				
+	  
+    // The click function 
+    click: function (event, data)
+        {
+			// clear entry for state reciprocity when clicking on another state
+			$('#recipAgree').html('');
+			console.log(data.name);
+			
+			// button function to execute staRec function and print result in the associated div
+			// button text will back to black upon click
+			$('#genButton').click(function() {
+				staRec(data.name, livState);
+				$('#recipAgree').html(recip);
+				$('#genButton').css('color','black');
+			});	
+				
+
+          // enable selection box for state reciprocity when a state is clicked
+          document.getElementById('stateSel').disabled = false;
+		  document.getElementById('genButton').disabled = false;
+
+          // start stateSwitch function with data.name parameter	
+          stateSwitch(data.name);
+		  
+		  
+
+          // top div
+          $('#clicked-state').html('State Tax Information: ' + data.name);
+
+          // state div
+          $('#sitHead').html(left1);
+          $('#sitInfo').html(left2);
+          $('#suiHead').html(right1);
+          $('#suiInfo').html(right2);
+
+          // print blurb about applied for process
+          $('#appl').html(applBox);
+
+          // bottom div, column 1, 2, and 3 
+          $('#bottom1').html(bottomCol1);
+          $('#bottom2').html(bottomCol2);
+          $('#bottom3_1').html(bottomCol3);
+		  
+		  
+		  
+        } // end of function
+	
+    }); // end of usmap
+
+
+  }); //end of document ready
+  </script>
+
+</body>
+
+</html>

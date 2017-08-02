@@ -1,0 +1,100 @@
+adpSTATE.tsv:
+
+State	staNUM	Abbr.	sitID	sitFREQ	sitDISB	suiID	suiFREQ	suiDISB	poaREQ	tpaREQ	sitWEB	suiWEB	localWEB	spTAX	localTAX	standHR	sitFORM	suiFORM	minWAGE	minCASH	maxTIP	subminWAGE	supplBONUS	suiLIMIT	sdiLIMIT	eeDED	newERSUI	disability	sitAPPL	sitAPPLNOTES	suiAPPL	suiAPPLNOTES				
+Alabama	1	AL	R000999999	MN - Monthly	E EFT-Electronic Funds Transfer	9999999999	QT - Quarterly	E - Electronic Funds Transfer	N/A	N/A	http://revenue.alabama.gov/	http://labor.alabama.gov/	http://www.amroa.com/roster.htm	N/A	N/A	No	A-1	UC-CR4	7.25	2.13	5.12	4.25	5.0%	8000		None	2.7%	None	Critical	24-hrs Online Registration	Critical	24-hrs Online Registration				
+Alaska	2	AK	N/A	N/A	N/A	99999999	QT - Quarterly	E - Electronic Funds Transfer	N/A	N/A	N/A	http://www.labor.state.ak.us/	N/A	"Employee-paid unemployment (SUI), Geographic and Occupational description"	N/A	No	N/A	TQ0IC	9.75				N/A	39700					N/A		Yes					
+Arizona	3	AZ	99-9999999	T2 - Tied to Federal	E EFT-Electronic Funds Transfer	9999999 9	QT - Quarterly	E - Electronic Funds Transfer	N/A	N/A	http://www.azdor.gov/	https://www.azdes.gov/		N/A	N/A	No	A1-QRT	UC-018	8.05				5.0%						FEIN		Yes					
+Arkansas	4	AR	99999999WHW	MN - Monthly	E EFT-Electronic Funds Transfer	999999999	QT - Quarterly	C - Check	N/A	N/A	http://www.dfa.arkansas.gov/	http://dws.arkansas.gov/		N/A	N/A	No	AR-3MAR	DWS-ARK209B	8				6.90%	12000					Yes		Critical	24-hrs Online Registration				
+California	5	CA	999-9999 9	T1 - Tied to Federal	E EFT-Electronic Funds Transfer	999-9999 9	QT - Quarterly	G - Group Check	N/A	N/A	http://www.edd.ca.gov/	http://www.edd.ca.gov/		"Employee-paid disability (SDI)
+
+Temporary-services employers"	N/A	No	DE9/DE9-c	DE9/DE9-c	10				10.23%	7000	106742				Critical		Critical	24-hrs Online Registration				
+Colorado	6	CO	99999999	MN - Monthly	C - Check	999999.99	QT - Quarterly	C - Check	CO SUI	N/A	http://www.colorado.gov/	http://www.colorado.gov/		N/A	Yes	No	DR 1094W	UITR-1	8.31				4.63%	12200					Yes		Critical	24-hrs Online Registration				
+Conneticut	7	CT	"9999999-999
+99999999-999"	WK - Weekly	E EFT-Electronic Funds Transfer	99-999-99	QT - Quarterly	E - Electronic Funds Transfer	N/A	N/A	http://www.ct.gov/drs/	http://www.ctdol.state.ct.us/		N/A	N/A	No	CT-WH	UC-2 & UC-5A	9.6				N/A	15000					Critical		Critical					
+Delaware	8	DE	1-999999999-001	OM - Octal	E EFT-Electronic Funds Transfer	99999 9	QT - Quarterly	C - Check	N/A	N/A	http://revenue.delaware.gov/	http://ui.delawareworks.com/		N/A	N/A	No	W-1	UC-8	8.25				N/A	18500					FEIN		Critical					
+DC	9	DC	1E+12	MN - Monthly	E EFT-Electronic Funds Transfer	99-9999	QT - Quarterly	S - Super Check	N/A	DC SUI	http://dc.gov/	http://dc.gov/		"Corporate Officer / EE Relationship
+
+New Commuter Transit Benefit"	N/A	No	N/A	DOES-UC830 / DUC8-31 ADP sends ILO	10.5										Warning		Critical					
+Florida	10	FL	N/A	N/A	N/A	9999999	QT - Quarterly	E - Electronic Funds Transfer	N/A	FL SUI	N/A	http://dor.myflorida.com/dor/		Annual Special Assessment	N/A	No	N/A	RT-6											N/A		Warning					
+Georgia	11	GA	9999999-AA	MN - Monthly	E EFT-Electronic Funds Transfer	999999-99	QT - Quarterly	C - Check	GA SUI	N/A	http://dor.georgia.gov/	http://dol.georgia.gov/employers		N/A	N/A	No	G-7	DOL-4											Yes	Force Registration	Yes					
+Hawaii	12	HI	W99999999-99	MN - Monthly	C - Check	999999999 9	QT - Quarterly	S - Super Check	N/A	N/A	http://tax.hawaii.gov/	http://tax.hawaii.gov/		Employee-paid disability (SDI)	N/A	No	HW-14	UC-B6											Yes		Critical					
+Idaho	13	ID	999999999	MN - Monthly	V - Variable	999999999 9	QT - Quarterly	V - Variable	N/A	N/A	http://tax.idaho.gov/	http://tax.idaho.gov/		N/A	N/A	No	910	TAX020											Yes	24-hrs Online Registration	Warning					
+Illinois	14	IL	99-9999999ss000 9	MN - Monthly	E EFT-Electronic Funds Transfer	9999999 9	MN - Monthly	C - Check	N/A	N/A	http://www.revenue.state.il.us/	http://www.ides.illinois.gov/		Monthly filing requirement for SUI	N/A	No	IL - 501	UI-3/40											FEIN		Warning					
+Indiana	15	IN	0999999999 999	AM - Accelerated Monthly	E EFT-Electronic Funds Transfer	999999	QT - Quarterly	S - Super Check	N/A	IN SUI	http://www.in.gov/dor	http://www.in.gov/dol		N/A	Yes	N/A	WH-1 (AM Freq.) or WH-3 (AN Freq.)	UC-1/UC-5											Critical		Critical	24-hrs Online Registration + </br> + TPA is Client Responsibility				
+Iowa	16	IA	99-9999999001	SM - Semi-Monthly	E EFT-Electronic Funds Transfer	"00999999
+"	QT - Quarterly	C - Check	N/A	IA SUI	http://www.iowa.gov/tax/	http://www.iowaworks.org/		N/A	N/A	No	e-File	65-5300											Critical		Critical	TPA is Client Responsibility				
+Kansas	17	KS	036999999999F01	SM - Semi-Monthly	E EFT-Electronic Funds Transfer	999999	QT - Quarterly	E - Electronic Funds Transfer	N/A	N/A	http://www.ksrevenue.org/	http://www.kansasemployer.gov/		N/A	Yes	No	KW-3	K-CNS100											Critical		Warning					
+Kentucky	18	KY	999999	SM - Semi-Monthly	C - Check	99-999999 9                          99-999999 A9	QT - Quarterly	S - Super Check	N/A	N/A	http://www.revenue.ky.gov/	http://www.labor.ky.gov/		N/A	Yes	No	"K-1 (check filers)
+K-1E (EFT filers)
+K-3 (check filers - last deposit of 4Q is filed on this form)
+K-3E (EFT filers - last deposit of 4Q is filed on this form)"	UI-3 Quarterly											Yes		Yes					
+Louisiana	19	LA	9999999999	SM - Semi-Monthly	E EFT-Electronic Funds Transfer	999999 9	QT - Quarterly	D - EDI	N/A	N/A	http://www.rev.state.la.us/	http://www.ldol.state.la.us/		Occupational description	N/A	No	L-1	4BC											Critical		Critical	24-hrs Online Registration				
+Maine	20	MA	99-9999999 99	SW - Semi-Weekly	E EFT-Electronic Funds Transfer	999999999 9	QT - Quarterly	E - Electronic Funds Transfer	N/A	N/A	http://www.state.me.us/revenue/	http://www.state.me.us/labor/		N/A	N/A	No	"SW- 900ME
+QT (Withholding only) 941ME"	UC-1											FEIN		Warning					
+Maryland	21	MD	0999999 9                   1999999 9        	MN - Monthly	E EFT-Electronic Funds Transfer	009999999 9	QT - Quarterly	S - Super Check	N/A	N/A	http://www.comp.state.md.us/	http://www.dllr.state.md.us/		NAICS code on annual return (MW508)	N/A	No	"MW506 - frequency varies
+MW508 - annual"	DLLR/OUI 15											Critical		Yes					
+Massachusetts	22	MT	999-999-999 99	MN - Monthly	E EFT-Electronic Funds Transfer	99-99999-9	QT - Quarterly	E - Electronic Funds Transfer	N/A	MA SUI	http://www.mass.gov/dor/	http://www.mass.gov/lwd/		"Employer Medical Assistance Contribution (EMAC) for employers with 6 or more EEs in a quarter (a.k.a. MA health tax or UHI)
+
+Note: EMAC uses the MA SUI ID number"	N/A	Yes	M942 or M941 (Webfile)	DET Quarterly Contribution Report (Quest)											FEIN	24-hrs Online Registration	Critical	TPA is Client Responsibility				
+Michigan	23	MI	"99-9999999
+ME-9999999 
+TR-9999999"	MN - Monthly	C - Check	9999999	QT - Quarterly	E - Electronic Funds Transfer	MI SIT	N/A	http://www.michigan.gov/treasury	http://www.michigan.gov/uia/		N/A	Yes	No	160; 165 (Annual Recon)	UIA-1020											FEIN		Critical	Force Registration				
+Minnesota	24	MN	9999999	FF - Full-base eFiling	E EFT-Electronic Funds Transfer	09999999-0999	QT - Quarterly	E - Electronic Funds Transfer	N/A	MN SIT-SUI	http://www.revenue.state.mn.us/	http://www.uimn.org/employers/employer-account/index.jsp		N/A	N/A	Yes	XML	MMREF/eFile											Critical	24-hrs Online Registration	Critical	24-hrs Online Registration				
+Mississippi	25	MS	9999-9999 	MN - Monthly	E EFT-Electronic Funds Transfer	99-99999-Z-99	QT - Quarterly	C - Check	N/A	N/A	http://www.dor.ms.gov/	http://mdes.ms.gov/		N/A	N/A	No	89-140	UI-2											Critical		Yes					
+Missouri	26	MO	99999999	QM - Quarter-Monthly	E EFT-Electronic Funds Transfer	999999-9-999-9999	QT - Quarterly	E - Electronic Funds Transfer	N/A	N/A	http://dor.mo.gov/	http://labor.mo.gov/		Missouri Income Tax Rebate -http://lumin.es.ad.adp.com:8080/contactcenter/documentLink.do?externalID=77705&msid=MS_SBS_1_1	Yes	No	MO-941P	MODES-4											Yes		Yes					
+Montana	27	MT	9999999-999-WTH	MN - Monthly	C - Check	999999                                  999 9999	QT - Quarterly	S - Super Check	N/A	N/A	https://revenue.mt.gov/	http://uid.dli.mt.gov/		N/A	N/A	No	Form MW-1	Form UI-5											Yes		Yes					
+Nebraska	28	NE	"9999
+99999
+999999
+9999999
+99999999"	MN - Monthly	E EFT-Electronic Funds Transfer	999999999 9	QT - Quarterly	E - Electronic Funds Transfer	N/A	N/A	http://www.revenue.state.ne.us/	http://dol.nebraska.gov/			N/A	No	941 N	UI 11T											Yes		Yes					
+Nevada	29	NV	N/A	N/A	N/A	99999999	QT - Quarterly	E - Electronic Funds Transfer	N/A	NV SUI	N/A	http://tax.state.nv.us/		Modified Business Tax (MBT)	N/A	No	N/A	NUCS-4072											N/A		Yes	TPA is Client Responsibility				
+New Hamshire	30	NH	 N/A 	N/A	N/A	000999999	QT - Quarterly		N/A	N/A	N/A	http://www.nhes.nh.gov/index.htm		N/A	N/A	No	N/A	DES 200											N/A		Warning					
+New Jersey	31	NJ	999-999-999/000	WK - Weekly	E EFT-Electronic Funds Transfer	999-999-999/000	QT - Quarterly	E - Electronic Funds Transfer	N/A	N/A	http://www.state.nj.us/treasury/taxation/	http://lwd.dol.state.nj.us/labor/ui/ui_index.html		"Employee-paid unemployment (SUI) or disability (SDI)
+Paid Family Leave (refer to link at right)"	N/A	No	NJ-927	NJ-927											FEIN		FEIN					
+New Mexico	32	NM	9999999999 9	AM - Accelerated Monthly		99999999	QT - Quarterly	E - Electronic Funds Transfer	N/A	NM SUI	http://www.tax.newmexico.gov/	http://www.dws.state.nm.us/		Workers’ Compensation Personnel Assessment (WCA)	N/A	No	CRS-1	ES903A											Critical		Critical	24-hrs Online Registration				
+New York	33	NY	999999999 9       99999999999 9	D3 - 3rd-Day	S - Super Check	99-99999 9	QT - Quarterly	S - Super Check	N/A	NY SIT	http://www.tax.ny.gov/	http://www.labor.ny.gov/		"Employee-paid disability (SDI), New York City (NYC) Mass Transit Benefit"	Yes	No	NYS-45	NYS-45											FEIN		Yes	TPA is Client Responsibility				
+North Carolina	34	NC	"099999999
+199999999
+299999999
+399999999
+699999999"	MN - Monthly	E EFT-Electronic Funds Transfer	99-99-999 9	QT - Quarterly	E - Electronic Funds Transfer	N/A	N/A	http://www.dor.state.nc.us/	http://www.ncesc1.com/		N/A	N/A	No	NC5Q	NCUI-101											Yes		Yes					
+North Dakota	35	ND	999999999-01 	QT - Quarterly	E EFT-Electronic Funds Transfer	"0999999
+1999999"	QT - Quarterly	E - Electronic Funds Transfer	N/A	N/A	http://www.nd.gov/tax	http://www.nd.gov/labor		N/A	N/A	No	306 (Qtr); 307 (Annual)	SFN 41263											FEIN		Yes					
+Ohio	36	OH	xx-999999 9 (xx=51-54)	MN - Monthly	E EFT-Electronic Funds Transfer	9999999-99 9	QT - Quarterly	E - Electronic Funds Transfer	N/A	N/A	http://www.tax.ohio.gov/	http://jfs.ohio.gov/ouc/uctax/index.stm		Regional Income Tax Agency (RITA)	Yes	No	IT-942 - Quarterly	JFS 20127 - Quarterly											Yes	24-hrs Online Registration	Yes					
+Oklahoma	37	OK	WTH 99999999-99 	FF - Full-base eFiling	E EFT-Electronic Funds Transfer	 99-999999 9 	QT - Quarterly	C - Check	OK SUI	N/A	http://www.oktax.state.ok.us/	http://www.ok.gov/odol		N/A	N/A	No	OW-9A	OESC (efile); OES-3 (hardcopy)											Critical		Yes					
+Oregon	38	OR	"0999999 9
+1999999 9"	T2 - Tied to Federal	E EFT-Electronic Funds Transfer	"0999999 9
+1999999 9"	QT - Quarterly	E - Electronic Funds Transfer	N/A	N/A	http://www.oregon.gov/DOR/	http://www.oregon.gov/BOLI/Pages/index.aspx		"Tri-Met and Lane Transit Taxes
+ 
+Workers' Benefit Fund (WBF) Fee"	Yes	Yes	OQ	OQ											Yes		Yes					
+Pennsylvania	39	PA	9999 9999	SM - Semi-Monthly	E EFT-Electronic Funds Transfer	99-99999	QT - Quarterly	E - Electronic Funds Transfer	N/A	PA SUI	http://www.revenue.state.pa.us/	http://www.dli.state.pa.us/		N/A	Yes	No	PA-W3	UC-2											Yes		Yes	TPA is Client Responsibility				
+Rhode Island	40	RI	99999999900	QM - Quarter-Monthly	E EFT-Electronic Funds Transfer	000999999 9	QT - Quarterly	E - Electronic Funds Transfer	N/A	N/A	http://www.tax.ri.gov/	http://www.uitax.ri.gov/		"Employee-paid disability (SDI)
+
+Job Development Fund (tax rate of .21% as of 1/1/15)"	N/A	Yes	RI/W3	TX-17											Critical		Yes					
+South Carolina	41	SC	"99999999 9
+999999999 "	T2 - Tied to Federal	E EFT-Electronic Funds Transfer	999999	QT - Quarterly	C - Check	N/A	N/A	http://www.sctax.org/default.htm	http://www.sces.org/		N/A	N/A	No	WH-1605	UCE-120											Yes	24-hrs Online Registration	Critical					
+South Dakota	42	SD	N/A	N/A	N/A	99999.9 9	QT - Quarterly	C - Check	N/A	N/A	http://dor.sd.gov/	http://dlr.sd.gov/		N/A	N/A	No	N/A	21											N/A		Yes					
+Tennessee	43	TN	N/A	N/A	N/A	0999-999  9	QT - Quarterly	E - Electronic Funds Transfer	TN SUI	N/A	N/A	https://www.tn.gov/workforce		N/A	N/A	No	N/A	LB-0851											N/A		Yes	Force Registration				
+Texas	44	TX	N/A 	N/A	N/A	99-999999 9	QT - Quarterly	E - Electronic Funds Transfer	TX SUI	N/A	N/A	http://www.twc.state.tx.us/		County Code required for TOPS setup	N/A	No	N/A	C-3											N/A		Critical					
+Utah	45	UT	99999999999WTH	MN - Monthly	C - Check	9-999999-9	QT - Quarterly	S - Super Check	N/A	N/A	http://tax.utah.gov/	https://jobs.utah.gov/ui/employer/employerhome.aspx		N/A	N/A	No	TC-941	33H											Critical	24-hrs Online Registration	Yes	Force Registration				
+Vermont	46	VT	"430999999999F01 
+WHT99999999
+"	MN - Monthly	E EFT-Electronic Funds Transfer	999 9999 	QT - Quarterly	G - Group Check	VT SIT	VT SIT	http://tax.vermont.gov/	http://labor.vermont.gov/		Employer's Health Care Fund Contribution	N/A	Yes	WH 431 - MN and QT Frequency	C-101 and C147											Critical	TPA is Client Responsibility	Yes					
+Virginia	47	VA	"T1 = 30-999999999F-999   MN = 30-V99999999F-999
+ "	SW - Semi-Weekly	E EFT-Electronic Funds Transfer	99999999	QT - Quarterly	S - Super Check	N/A	N/A	http://www.tax.virginia.gov/	http://www.vec.virginia.gov/		N/A	N/A	No	"VA-5 (semi monthly, monthly,
+and quarterly filers)
+
+VA-16 (semi-weekly filers)"	VEC-FC-20											Critical		Yes					
+Washington	48	WA	 N/A 	N/A		999999 99 9 	QT - Quarterly	C - Check	N/A	N/A	N/A	http://www.esd.wa.gov/		Labor and Industry (L&I)	N/A	Yes	N/A	EMA 5208A											N/A		Critical	Force Registration				
+West Virginia	49	WV	"9999-9999 
+99-999-9999"	MN - Monthly	E EFT-Electronic Funds Transfer	 000099999 9 	QT - Quarterly	C - Check	N/A	N/A	http://tax.wv.gov/Pages/default.aspx	http://www.wvcommerce.org/App_Media/assets/html/workforce.html		N/A	N/A	No	EFT no form	WVUC-A-154											FEIN		Yes	24-hrs Online Registration				
+Wisconsin	50	WI	 036 9999999999 99 	SM - Semi-Monthly	E EFT-Electronic Funds Transfer	"999999-000
+999999-000-9"	QT - Quarterly	E - Electronic Funds Transfer	N/A	N/A	https://www.revenue.wi.gov/	https://dwd.wisconsin.gov/		N/A	N/A	No	"WT-6 (SM/MN/QT)
+WT-7 (AN)"	UCT-101											Yes		Critical	24-hrs Online Registration				
+Wyoming	51	WY	N/A	N/A	N/A	"99999999
+999999999
+99999999 9
+"	QT - Quarterly	C - Check	N/A	N/A	N/A	http://www.wyomingworkforce.org/		Workers’ Compensation (WC)	N/A	No	N/A	WYO 056											N/A		Yes	Force Registration				
+Puerto Rico	52	PR									http://www.hacienda.gobierno.pr/	http://www.hacienda.gobierno.pr/		Pays no federal income tax.	N/A	No	499R-1B	PR Quarterly Wage Report											FEIN		Critical					
+Virgin Islands	53													N/A	N/A	No													Yes		Yes					

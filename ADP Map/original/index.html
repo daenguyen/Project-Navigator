@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ADP US Map Resource</title>
+<script src="lib/jquery.js"></script>
+<script src="lib/raphael.js"></script>
+<script src="lib/jquery.usmap.js"></script>
+<script src="lib/jquery-ui.js"></script>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="jquery-ui.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="selected-state">State Selection: <span></span></div>
+<div id="map"></div>
+
+<div id="clicked-state">
+<div id="display-text"></div>
+<div id="display-state"></div>	
+</div>
+<!-- <div id="xState"></div> -->
+
+<script>
+$(document).ready(function() {
+$('#map').usmap({
+
+	// display all states abbreviations
+	'useAllLabels': true,
+
+   // map color + on hover color functions
+	'stateStyles': {
+	      fill: '#'+Math.random().toString(16).substr(-6), 
+	      "stroke-width": 1,
+	      'stroke' : '#e5eaef'
+	    },
+	    'stateHoverStyles': {
+	      fill: '#025'
+	    },
+		
+		'mouseover': function(event, data) {
+      	  $('#selected-state > span')
+	  		.text(data.name)
+	  		.css({"font-weight": "bold", "color": "#FF6E6E"});
+    	},
+		
+    	'mouseout': function(event, data) {
+      	  $('#selected-state > span')
+		  .text('Select a State')
+		  .css({"font-weight": "normal", "color": "#272D33"});
+		},
+//-------------------------------------------------------------------------------------------		
+	'click': function(event, data) {		
+    
+    // calculate values to use for positioning -> var xState = window.innerWidth / 10;
+    var description = "No state info loaded for this state";
+    var sit = "No state SIT info";
+    var staTax = description + '<br />' + sit; // formatting variables together
+    var myPos = { my: "left+5% top", at: "right top", of: '#map' };	// create a variable with stored position parameters
+    switch(data.name)
+    {
+    	case 'AZ':
+    		description = 'You clicked on the hottest state ever!'; // + '<br />' + 'Arizona shares the same Federal ID'
+    		sit = 'Arizona shares the same Federal ID';
+    		staTax = description + '<br />' + sit;
+    		break;
+        case 'IL':
+            description = 'You clicked on the Land of Lincoln!';
+			
+            break;
+        case 'MO':
+            description = 'You clicked on the Show-Me State!';
+            break;
+        // etc
+	}
+	$('#clicked-state').dialog({
+	 	maxWidth: 600,
+        maxHeight: 500,
+        width: 600,
+        height: 500,
+		modal: true,
+		title: data.name + " " + "Tax Information",
+		position: myPos,
+		'open': function (event, data) {
+			$('#display-text').html(description);
+			$('#display-state').html(sit);
+			$(document).click (function(event, data){
+            	$('#clicked-state').dialog('close');
+			})
+		}
+	})
+}
+		
+		
+//-------------------------------------------------------------------------------------------  
+	}); // end of usmap
+}); //end of document ready
+
+</script>
+
+</body>
+
+</html>
