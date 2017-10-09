@@ -127,6 +127,8 @@ function stateSwitch(staData)
      disability = 'None';
      sdiLIMIT = ' N/A';
      eeDED = 'None';
+	 workCOMP = 'N/A';
+     appl4Proc = '';
      
      //Applied For ID Matrix
      sitAPPL = 'Critical';
@@ -468,7 +470,7 @@ function stateSwitch(staData)
      suiWEB = 'http://www.colorado.gov/';
      localWEB = '';
      spTAX = 'N/A';
-     localTAX = 'Yes';
+     localTAX = 'Yes,' + ' ' + '<a href="https://adpworks.jiveon.com/servlet/JiveServlet/downloadBody/8004-102-21-344479/Local%20Tax%20Overview%20Book%20Employment%20Tax%20Clients.pdf" target="_blank">Local Tax Overview</a>';
      standHR = 'No';
      sitFORM = 'DR 1094W';
      suiFORM = 'UITR-1';
@@ -729,7 +731,7 @@ function stateSwitch(staData)
 
      //LUMIN: States 
      poaREQ = 'N/A';
-     tpaREQ = 'DC SUI';
+     tpaREQ = 'Yes, DC SUI' + '<br />' + '<a href="https://adpworks.jiveon.com/servlet/JiveServlet/download/75386-1-297524/DC%20SUI%20TPA%20INSTRUCTIONS%20(2).docx" target="_blank">DC TPA Instructions</a>';
      sitWEB = 'http://dc.gov/';
      suiWEB = 'http://dc.gov/';
      localWEB = '';
@@ -816,7 +818,7 @@ function stateSwitch(staData)
 
      //LUMIN: States 
      poaREQ = 'N/A';
-     tpaREQ = 'FL SUI';
+     tpaREQ = 'Yes, FL SUI' + '<br />' + '<a href="http://dc1prknovkcwb55.es.ad.adp.com:8080/UploadedFiles/file/MS-SBS/Solutions/FL%20SUI%20TPA%20instructions.pdf" target="_blank">FL TPA Instructions</a>';
      sitWEB = 'N/A';
      suiWEB = 'http://dor.myflorida.com/dor/';
      localWEB = '';
@@ -924,7 +926,7 @@ function stateSwitch(staData)
      sdiLIMIT = ' N/A';
      eeDED = 'None';
      workCOMP = 'N/A';
-     appl4Proc = 'Employer registration applications can now be submitted online. To process the online application, employers must complete the following:' + '<br>' + '1. Download the attached application form, CRF-002 <a href="http://tfs.ca.adp.com/dept/ar/state/Tax%20Registration%20CRF-002%20Rev%208-02%20-.doc" target="_blank">CRF-002</a> rev. 8/2002 and instructions <a href="http://tfs.ca.adp.com/dept/ar/state/Tax%20Registration%20CRF-002%20Rev%208-02%20-%20instructions.doc" target="_blank">CRF-002 Instructions</a>.' + '<br>' + '2. Submit the completed application to the agency online at email address rmfreema@gatax.org <mailto:rmfreema@gatax.org>.' + '<br>' + '3. The agency will issue a Georgia SIT ID# within 2-3 days (7-10 days mailed/faxed in) provided it contains the required information.' + '<br>' + '4. The signed hard copy application must still be mailed in for agency records.' + '<br>' + '5. Should there be any questions, employers can call 404-417-4490 and an agency representative will be available for assistance.';
+     appl4Proc = '<br>' + '1. Download the attached application form, <a href="http://tfs.ca.adp.com/dept/ar/state/Tax%20Registration%20CRF-002%20Rev%208-02%20-.doc" target="_blank">CRF-002</a> rev. 8/2002 and instructions <a href="http://tfs.ca.adp.com/dept/ar/state/Tax%20Registration%20CRF-002%20Rev%208-02%20-%20instructions.doc" target="_blank">CRF-002 Instructions</a>.' + '<br>' + '2. Submit the completed application to the agency online at email address rmfreema@gatax.org <mailto:rmfreema@gatax.org>.' + '<br>' + '3. The agency will issue a Georgia SIT ID# within 2-3 days (7-10 days mailed/faxed in) provided it contains the required information.';
 
      //Applied For ID Matrix
      sitAPPL = 'Critical';
@@ -1338,12 +1340,12 @@ function stateSwitch(staData)
 
      //LUMIN: States 
      poaREQ = 'N/A';
-     tpaREQ = 'IN SUI';
+     tpaREQ = 'Yes, IN SUI' + '<br />' + '<a href="http://apps.adpcorp.com/sites/SmartHub/tcoe/_layouts/15/WopiFrame2.aspx?sourcedoc=/sites/SmartHub/tcoe/DocumentsTax%20Proactive%20Services/TPA_IN_SUI_Clt_Ltr.docx&action=default&DefaultItemOpen=1" target="_blank">IN TPA Instructions</a>';
      sitWEB = 'http://www.in.gov/dor';
      suiWEB = 'http://www.in.gov/dol';
      localWEB = '';
      spTAX = 'N/A';
-     localTAX = 'Yes';
+     localTAX = 'Yes,' + ' ' + '<a href="https://adpworks.jiveon.com/servlet/JiveServlet/downloadBody/8004-102-21-344479/Local%20Tax%20Overview%20Book%20Employment%20Tax%20Clients.pdf" target="_blank">Local Tax Overview</a>'; 
      standHR = 'N/A';
      sitFORM = 'WH-1 (AM Freq.) or WH-3 (AN Freq.)';
      suiFORM = 'UC-1/UC-5';
@@ -1358,6 +1360,8 @@ function stateSwitch(staData)
      disability = 'None';
      sdiLIMIT = ' N/A';
      eeDED = 'None';
+	 workCOMP = 'N/A';
+     appl4Proc = '';
 
      //Applied For ID Matrix
      sitAPPL = 'Critical';
@@ -1423,7 +1427,7 @@ function stateSwitch(staData)
 
      //LUMIN: States 
      poaREQ = 'N/A';
-     tpaREQ = 'IA SUI';
+     tpaREQ = 'Yes, IA SUI' + '<br />' + '<a href="http://apps.adpcorp.com/sites/SmartHub/tcoe/_layouts/15/WopiFrame.aspx?sourcedoc=/sites/SmartHub/tcoe/DocumentsTax%20Proactive%20Services/TPA_IA_SUI_Clt_Ltr.docx&action=default&DefaultItemOpen=1" target="_blank">IA TPA Instructions</a>';
      sitWEB = 'http://www.iowa.gov/tax/';
      suiWEB = 'http://www.iowaworks.org/';
      localWEB = '';
@@ -1603,7 +1607,7 @@ function stateSwitch(staData)
      suiWEB = 'http://www.labor.ky.gov/';
      localWEB = '';
      spTAX = 'N/A';
-     localTAX = 'Yes';
+     localTAX = 'Yes,' + ' ' + '<a href="https://adpworks.jiveon.com/servlet/JiveServlet/downloadBody/8004-102-21-344479/Local%20Tax%20Overview%20Book%20Employment%20Tax%20Clients.pdf" target="_blank">Local Tax Overview</a>';
      standHR = 'No';
      sitFORM = 'K-1 (check filers), K-1E (EFT filers), K-3 (check filers - last deposit of 4Q is filed on this form), K-3E (EFT filers - last deposit of 4Q is filed on this form)';
      suiFORM = 'UI-3 Quarterly';
@@ -1946,7 +1950,8 @@ function stateSwitch(staData)
 
      //LUMIN: States 
      poaREQ = 'N/A';
-     tpaREQ = 'MA SUI';
+     tpaREQ = 'Yes, MA SUI'  + '<br />' + '<a href="http://apps.adpcorp.com/sites/SmartHub/tcoe/_layouts/15/WopiFrame2.aspx?sourcedoc=/sites/SmartHub/tcoe/DocumentsTax%20Proactive%20Services/TPA%20MA%20SIT%20Clt%20Ltr.docx&action=default&DefaultItemOpen=1" target="_blank">MA SIT TPA Instructions</a>' 
+	 + '<br />' + '<a href="http://apps.adpcorp.com/sites/SmartHub/tcoe/_layouts/15/WopiFrame.aspx?sourcedoc=/sites/SmartHub/tcoe/DocumentsTax%20Proactive%20Services/TPA_MA_SUI_Clt_Ltr.docx&action=default&DefaultItemOpen=1" target="_blank">MA SUI TPA Instructions</a>';
      sitWEB = 'http://www.mass.gov/dor/';
      suiWEB = 'http://www.mass.gov/lwd/';
      localWEB = '';
@@ -2038,7 +2043,7 @@ function stateSwitch(staData)
      suiWEB = 'http://www.michigan.gov/uia/';
      localWEB = '';
      spTAX = 'N/A';
-     localTAX = 'Yes';
+     localTAX = 'Yes,' + ' ' + '<a href="https://adpworks.jiveon.com/servlet/JiveServlet/downloadBody/8004-102-21-344479/Local%20Tax%20Overview%20Book%20Employment%20Tax%20Clients.pdf" target="_blank">Local Tax Overview</a>';
      standHR = 'No';
      sitFORM = '160; 165 (Annual Recon)';
      suiFORM = 'UIA-1020';
@@ -2120,7 +2125,8 @@ function stateSwitch(staData)
 
      //LUMIN: States 
      poaREQ = 'N/A';
-     tpaREQ = 'MN SIT-SUI';
+     tpaREQ = 'Yes, MN SIT-SUI'  + '<br />' + '<a href="https://dc1prknovkcwb55.es.ad.adp.com:8080/UploadedFiles/file/MS-SBS/Solutions/TPA%20Instructions.pdf" target="_blank">MN SIT TPA Instructions</a>' 
+	 + '<br />' + '<a href="http://apps.adpcorp.com/sites/SmartHub/tcoe/_layouts/15/WopiFrame2.aspx?sourcedoc=/sites/SmartHub/tcoe/DocumentsTax%20Proactive%20Services/TPA_MN_SUI_Clt_Ltr.docx&action=default&DefaultItemOpen=1" target="_blank">MN SUI TPA Instructions</a>';
      sitWEB = 'http://www.revenue.state.mn.us/';
      suiWEB = 'http://www.uimn.org/employers/employer-account/index.jsp';
      localWEB = '';
@@ -2299,7 +2305,7 @@ function stateSwitch(staData)
      suiWEB = 'http://labor.mo.gov/';
      localWEB = '';
      spTAX = 'Missouri Income Tax Rebate -http://lumin.es.ad.adp.com:8080/contactcenter/documentLink.do?externalID =77705&msid =MS_SBS_1_1';
-     localTAX = 'Yes';
+     localTAX = 'Yes,' + ' ' + '<a href="https://adpworks.jiveon.com/servlet/JiveServlet/downloadBody/8004-102-21-344479/Local%20Tax%20Overview%20Book%20Employment%20Tax%20Clients.pdf" target="_blank">Local Tax Overview</a>';
      standHR = 'No';
      sitFORM = 'MO-941P';
      suiFORM = 'MODES-4';
@@ -2555,7 +2561,7 @@ function stateSwitch(staData)
 
      //LUMIN: States 
      poaREQ = 'N/A';
-     tpaREQ = 'NV SUI';
+     tpaREQ = 'Yes, NV SUI' + '<br />' + '<a href="http://apps.adpcorp.com/sites/SmartHub/tcoe/_layouts/15/WopiFrame2.aspx?sourcedoc=/sites/SmartHub/tcoe/DocumentsTax%20Proactive%20Services/TPA_NV_SUI_Clt_Ltr.docx&action=default&DefaultItemOpen=1" target="_blank">NV TPA Instructions</a>';
      sitWEB = 'N/A';
      suiWEB = 'http://tax.state.nv.us/';
      localWEB = '';
@@ -2816,7 +2822,7 @@ function stateSwitch(staData)
 
      //LUMIN: States 
      poaREQ = 'N/A';
-     tpaREQ = 'NM SUI';
+     tpaREQ = 'Yes, NM SUI' + '<br />' + '<a href="http://dc1prknovkcwb55.es.ad.adp.com:8080/UploadedFiles/file/MS-SBS/Solutions/TPA%20Instructions.pdf" target="_blank">NM TPA Instructions</a>';
      sitWEB = 'http://www.tax.newmexico.gov/';
      suiWEB = 'http://www.dws.state.nm.us/';
      localWEB = '';
@@ -2903,12 +2909,12 @@ function stateSwitch(staData)
 
      //LUMIN: States 
      poaREQ = 'N/A';
-     tpaREQ = 'NY SIT';
+     tpaREQ = 'NY SIT' + '<br />' + '<a href="http://apps.adpcorp.com/Sites/Comm/Lists/Articles/Attachments/237/NewYork-Employer-Instructions-For-Granting-Tax-Professional-Access_Nov20131.pdf0.pdf" target="_blank">NY TPA Instructions</a>';
      sitWEB = 'http://www.tax.ny.gov/';
      suiWEB = 'http://www.labor.ny.gov/';
      localWEB = '';
      spTAX = 'Employee-paid disability (SDI), New York City (NYC) Mass Transit Benefit';
-     localTAX = 'Yes';
+     localTAX = 'Yes,' + ' ' + '<a href="https://adpworks.jiveon.com/servlet/JiveServlet/downloadBody/8004-102-21-344479/Local%20Tax%20Overview%20Book%20Employment%20Tax%20Clients.pdf" target="_blank">Local Tax Overview</a>';
      standHR = 'No';
      sitFORM = 'NYS-45';
      suiFORM = 'NYS-45';
@@ -3169,7 +3175,7 @@ function stateSwitch(staData)
      suiWEB = 'http://jfs.ohio.gov/ouc/uctax/index.stm';
      localWEB = '';
      spTAX = 'Regional Income Tax Agency (RITA)';
-     localTAX = 'Yes';
+     localTAX = 'Yes,' + ' ' + '<a href="https://adpworks.jiveon.com/servlet/JiveServlet/downloadBody/8004-102-21-344479/Local%20Tax%20Overview%20Book%20Employment%20Tax%20Clients.pdf" target="_blank">Local Tax Overview</a>';
      standHR = 'No';
      sitFORM = 'IT-942 - Quarterly';
      suiFORM = 'JFS 20127 - Quarterly';
@@ -3343,7 +3349,7 @@ function stateSwitch(staData)
      suiWEB = 'http://www.oregon.gov/BOLI/Pages/index.aspx';
      localWEB = '';
      spTAX = 'Tri-Met and Lane Transit Taxes Workers Benefit Fund (WBF) Fee';
-     localTAX = 'Yes';
+     localTAX = 'Yes,' + ' ' + '<a href="https://adpworks.jiveon.com/servlet/JiveServlet/downloadBody/8004-102-21-344479/Local%20Tax%20Overview%20Book%20Employment%20Tax%20Clients.pdf" target="_blank">Local Tax Overview</a>';
      standHR = 'Yes';
      sitFORM = 'OQ';
      suiFORM = 'OQ';
@@ -3425,12 +3431,12 @@ function stateSwitch(staData)
 
      //LUMIN: States 
      poaREQ = 'N/A';
-     tpaREQ = 'PA SUI';
+     tpaREQ = 'Yes, PA SUI' + '<br />' + '<a href="http://lumin.es.ad.adp.com:8080/contactcenter/documentLink.do?externalID=81815#&msid=MS_SBS_1_1" target="_blank">PA TPA Instructions</a>';
      sitWEB = 'http://www.revenue.state.pa.us/';
      suiWEB = 'http://www.dli.state.pa.us/';
      localWEB = '';
      spTAX = 'N/A';
-     localTAX = 'Yes';
+     localTAX = 'Yes,' + ' ' + '<a href="https://adpworks.jiveon.com/servlet/JiveServlet/downloadBody/8004-102-21-344479/Local%20Tax%20Overview%20Book%20Employment%20Tax%20Clients.pdf" target="_blank">Local Tax Overview</a>';
      standHR = 'No';
      sitFORM = 'PA-W3';
      suiFORM = 'UC-2';
@@ -3859,8 +3865,8 @@ function stateSwitch(staData)
      suiDISB = 'E - EFT';
 
      //LUMIN: States 
-     poaREQ = 'TX SUI';
-     tpaREQ = 'N/A';
+     poaREQ = 'Yes, TX SUI';
+     tpaREQ = 'Yes, TX SUI' + '<br />' + '<a href="http://apps.adpcorp.com/sites/SmartHub/tcoe/_layouts/15/WopiFrame.aspx?sourcedoc=/sites/SmartHub/tcoe/DocumentsTax%20Proactive%20Services/TPA_TX_SUI_Clt_Ltr.docx&action=default&DefaultItemOpen=1" target="_blank">TX TPA Instructions</a>';
      sitWEB = 'N/A';
      suiWEB = 'http://www.twc.state.tx.us/';
      localWEB = '';
@@ -4033,8 +4039,8 @@ function stateSwitch(staData)
      suiDISB = 'G - Group Check';
 
      //LUMIN: States 
-     poaREQ = 'VT SIT';
-     tpaREQ = 'VT SIT';
+     poaREQ = 'Yes, VT SIT';
+     tpaREQ = 'Yes, VT SIT' + '<br />' + '<a href="http://apps.adpcorp.com/sites/SmartHub/tcoe/_layouts/15/WopiFrame.aspx?sourcedoc=/sites/SmartHub/tcoe/DocumentsTax%20Proactive%20Services/TPA_VT_SIT_Clt_Ltr.docx&action=default&DefaultItemOpen=1" target="_blank">VT TPA Instructions</a>';
      sitWEB = 'http://tax.vermont.gov/';
      suiWEB = 'http://labor.vermont.gov/';
      localWEB = '';
